@@ -9,17 +9,6 @@ import configureStore from './configureStore';
 
 const store = configureStore();
 
-// render(
-//   <AppContainer>
-//     <Provider store={store}>
-//       <div>
-//         <MainApp />
-//       </div>
-//     </Provider>
-//   </AppContainer>,
-//   document.getElementById('root')
-// );
-
 const renderApp = Component =>
   render(
     <AppContainer>
