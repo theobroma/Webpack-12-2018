@@ -14,13 +14,13 @@ config.module = {
   rules: [
     {
       test: /\.(sass|scss)$/,
-      use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+      use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
     },
     {
       use: ['style-loader', 'css-loader', 'postcss-loader'],
-      test: /\.css$/
-    }
-  ]
+      test: /\.css$/,
+    },
+  ],
 };
 
 config.plugins = [
@@ -29,10 +29,10 @@ config.plugins = [
   // drop any unreachable code.
   new webpack.DefinePlugin({
     'process.env': {
-      NODE_ENV: JSON.stringify('development')
-    }
+      NODE_ENV: JSON.stringify('development'),
+    },
   }),
-  new webpack.HotModuleReplacementPlugin()
+  new webpack.HotModuleReplacementPlugin(),
 ];
 
 config.devServer = {
@@ -44,7 +44,7 @@ config.devServer = {
   hot: true,
   // Don't refresh if hot loading fails. Good while
   // implementing the client interface.
-  hotOnly: true
+  hotOnly: true,
 };
 
 module.exports = merge(common, config);
