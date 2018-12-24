@@ -29,21 +29,21 @@ config.resolve = {
 
 config.module = {
   rules: [
-    // {
-    //   test: /\.jsx?$/,
-    //   use: {
-    //     loader: 'babel-loader?cacheDirectory',
-    //     // options: {
-    //     //   presets: ['env', 'react', 'stage-0']
-    //     // }
-    //   },
-    //   exclude: /node_modules/,
-    // },
     {
       test: /\.jsx?$/,
+      use: {
+        loader: 'babel-loader?cacheDirectory',
+        // options: {
+        //   presets: ['env', 'react', 'stage-0']
+        // }
+      },
       exclude: /node_modules/,
-      use: ['babel-loader', 'eslint-loader'],
     },
+    // {
+    //   test: /\.jsx?$/,
+    //   exclude: /node_modules/,
+    //   use: ['babel-loader', 'eslint-loader'],
+    // },
     // {
     //   test: /\.(sass|scss)$/,
     //   use: ExtractTextPlugin.extract({
