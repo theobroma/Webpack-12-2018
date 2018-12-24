@@ -6,3 +6,6 @@ client/dist
 server/dist
 #vs code setting folder
 .vscode
+#env
+client/.env
+               
