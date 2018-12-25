@@ -8,4 +8,6 @@ server/dist
 .vscode
 #env
 client/.env
+# test
+client/test-report.xml
                

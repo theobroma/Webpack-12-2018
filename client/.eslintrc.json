@@ -3,10 +3,11 @@
         "browser": true,
         "commonjs": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "jest/globals": true
     },
-    "extends": ["airbnb","prettier"],
-    "plugins": ["prettier"],
+    "extends": ["airbnb","prettier","plugin:jest/recommended"],
+    "plugins": ["prettier","jest"],
     "rules": {
         "no-underscore-dangle": ["error", { "allowAfterThis": true }],
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
